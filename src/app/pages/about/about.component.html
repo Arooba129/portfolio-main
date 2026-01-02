@@ -1,0 +1,31 @@
+<div class="container page-content fade-in">
+    <div class="section-header">
+        <h1>About Me</h1>
+        <p class="subtitle">My journey as a developer.</p>
+    </div>
+
+    <div class="about-grid">
+        <div class="bio-section">
+            <h2>Who I Am</h2>
+            <p>
+               I am a motivated software developer with hands-on internship experience in building web applications using Java Spring Boot on the backend and Angular with TypeScript on the frontend. I have worked on developing RESTful APIs, integrating frontend components with backend services, and implementing responsive user interfaces.
+            </p>
+            <p>
+                I enjoy learning modern frameworks, writing clean code, and continuously improving my development skills in real-world projects.
+            </p>
+        </div>
+
+        <div class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" *ngFor="let skill of skills">
+                    <div class="skill-icon">{{ skill.icon }}</div>
+                    <div class="skill-info">
+                        <h3>{{ skill.name }}</h3>
+                        <span class="skill-level">{{ skill.level }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

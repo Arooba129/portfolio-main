@@ -1,0 +1,31 @@
+<div class="container page-content fade-in">
+    <div class="resume-header">
+        <h1>My Experience</h1>
+        <button class="btn btn-primary" (click)="downloadResume()">
+            Download Resume PDF
+        </button>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item" *ngFor="let exp of experiences">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span class="period">{{ exp.period }}</span>
+                <h3>{{ exp.role }}</h3>
+                <h4>{{ exp.company }}</h4>
+                <ul>
+                    <li *ngFor="let point of exp.description">{{ point }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="education-section">
+        <h2>Education</h2>
+        <div class="edu-card" *ngFor="let edu of education">
+            <h3>{{ edu.degree }}</h3>
+            <p>{{ edu.school }}</p>
+            <span>{{ edu.year }}</span>
+        </div>
+    </div>
+</div>

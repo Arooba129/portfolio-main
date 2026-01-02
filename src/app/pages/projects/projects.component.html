@@ -1,0 +1,30 @@
+<div class="container page-content fade-in">
+    <div class="section-header">
+        <h1>Featured Projects</h1>
+        <p class="subtitle">A collection of extensive web applications.</p>
+    </div>
+
+    <div class="projects-grid">
+        <div class="project-card" *ngFor="let project of projects">
+            <div class="card-image">
+                <img [src]="project.imageUrl" [alt]="project.title">
+                <div class="image-overlay">
+                    <div class="links">
+                        <a [href]="project.demoUrl" target="_blank" class="btn-icon" aria-label="View Demo">Last Live
+                            Demo</a>
+                        <a [href]="project.repoUrl" target="_blank" class="btn-icon" aria-label="View Code">GitHub
+                            Repo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-content">
+                <h2>{{ project.title }}</h2>
+                <p>{{ project.description }}</p>
+                <div class="tech-tags">
+                    <span class="tag" *ngFor="let tech of project.tech">{{ tech }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
