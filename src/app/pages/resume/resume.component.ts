@@ -23,8 +23,8 @@ export class ResumeComponent {
             period: '2025 - Present',
             description: [
                 'Assisted in developing backend services with Java Spring Boot and integrating them with Angular front-end components.',
-'Worked with reactive forms and API integration in Angular to build dynamic user interfaces.',
-'Participated in code reviews and team discussions to understand enterprise-level application architecture.'
+                'Worked with reactive forms and API integration in Angular to build dynamic user interfaces.',
+                'Participated in code reviews and team discussions to understand enterprise-level application architecture.'
 
             ]
         },
@@ -33,9 +33,9 @@ export class ResumeComponent {
             role: 'Software Engineer Trainee',
             period: '2022',
             description: [
-                'Developed reliable APIs using Node.js and Express.',
-                'Built responsive UI components for 10+ client websites.',
-                'Optimized frontend performance, achieving 90+ Lighthouse scores.'
+                'Converted Figma designs into responsive web pages using HTML, CSS, and Bootstrap.',
+                'Implemented interactivity with JavaScript for dynamic user experiences.',
+                'Ensured pixel-perfect UI/UX, maintaining design consistency across devices.'
             ]
         },
     ];
